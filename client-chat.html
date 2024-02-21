@@ -211,12 +211,8 @@
                         chatBox.appendChild(messageSender);
                     }
                 });
-                if (!first) {
-                    scrollToBottom();
-                    first = true;
-                }else{
-                    chatBoxElement.scrollTop = scrollPosition;
-                }
+                scrollToBottom();
+
             }
         }
 
