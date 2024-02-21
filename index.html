@@ -230,7 +230,6 @@
             })
 
             textarea.value = ''
-            first = false;
             getMessages();
         }
 
@@ -301,7 +300,8 @@
             return url.match(/\.(jpeg|jpg|gif|png)$/) != null;
         }
 
-        // Tema de refrescado de pantalla
+        // Tema de refrescado de mensajes
+        getMessages();
         setInterval(getMessages, 5000)
 
     </script>
